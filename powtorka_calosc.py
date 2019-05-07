@@ -3,8 +3,8 @@ print('This is gona be a repeat of everything Python\'y')
 #declaring variables I don't remember if this is a comment 
 numberOne = 5
 numberTwo = 8
-name = 'Bożena'
-surname = 'Misiula'
+name = 'Bourbon'
+surname = 'Whiskey'
 
 #using all possible operators and achieving all outcomes=============================================
 print('=====[OPERATORS AND THEIR USE]===========')
@@ -28,16 +28,16 @@ while(counter < 3):
 
 #conditions==========================================================================================
 print('======[CONDITIONS]==========')
-if(name == 'Bożena'):
+if(name == 'Bourbon'):
     print('Hello there my love')
-elif(name == 'Rafał'):
+elif(name == 'Vodka'):
     print('What\'s up bitch?')
 else:
     print('I don\'t know you')
 
 print('================')
 
-if(name == 'Bożena' and surname == 'Misiula'):
+if(name == 'Bourbon' and surname == 'Whiskey'):
     print('Me love you long time')
 
 #functions===========================================================================================
@@ -62,13 +62,13 @@ print('======[LISTS/TUPLES/DICTIONARIES]==========')
 
 #classes/methods=====================================================================================
 print('======[CLASSES]==========')
-class Liczniki:
-    def suma(no1, no2):
+class Counters:
+    def addition(no1, no2):
         return no1 + no2
     surname = 'Nowak'
 
-print(Liczniki.suma(numberOne, numberTwo))
-print(Liczniki.surname)
+print(Counters.addition(numberOne, numberTwo))
+print(Counters.surname)
 
 
 

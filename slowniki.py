@@ -1,7 +1,7 @@
 print('======   DICTIONARIES =====')
 
-sample_dict = { 'name' : 'Bożena',
-                'surname' : 'Misiula',
+sample_dict = { 'name' : 'Bourbon',
+                'surname' : 'Whiskey',
                 'age' : 23,
                 'profession' : 'cashier'}
 

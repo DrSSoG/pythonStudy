@@ -6,7 +6,7 @@ for i in range(len(shopping_list)):
 
 print('================================================')
 shopping_list[0] = 'banana'
-print(shopping_list, ' zmiana przez wskazanie ID')
+print(shopping_list, ' change before the ID')
 
 added_list = ['Coca-cola', 'Pepsi', 'Fanta']
 shopping_list[1:3] = added_list

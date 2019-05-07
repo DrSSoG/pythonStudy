@@ -11,5 +11,5 @@ def towers(numOfDiscs, fr, to, spare):
 
 while True:
     ask = int(input('Number of discs'))
-    towers(ask, 'LEWA', 'SRODEK', 'PRAWA')
+    towers(ask, 'LEFT', 'MIDDLE', 'RIGHT')
     
