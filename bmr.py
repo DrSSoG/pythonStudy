@@ -11,14 +11,15 @@ else:
     print('Wrong input')
 
 print('Which fits you best?')
-print("""No physical activity, sitting or laying [1]
+print("""
+        No physical activity, sitting or laying [1]
         Seated job, low physical activity [2]
         Not a physical job, training 2 times a week [3]
         Light physical work, training 3-4 times a week [4]
         Physical work, training 5 times a week [5]
         Hard physical work, training every day [6]""")
 
-lifestyle = input("Value fitting yours: ")
+lifestyle = int(input("Value fitting yours: "))
 if lifestyle == 1:
     modifier = 1.0
 elif lifestyle == 2:
@@ -35,14 +36,15 @@ else:
      print('Wrong value')
 
 totalburned = bmr * modifier
-print(totalburned + 'kcal will not cause a significant change in your body')
+print(str(totalburned) + 'kcal will not cause a significant change in your body')
 
 print('========')
-print('''Endomorph [1]
+print('''
+        Endomorph [1]
         Mesomorph [2]
         Ectomorph [3]''')
 
-bodyType = input('Choose the proper value again')
+bodyType = int(input('Choose the proper value again'))
 if bodyType == 1:
     bodyTypeModifier = 0.1
     reductionModifier = 0.2
@@ -56,7 +58,7 @@ else:
     print('Wrong value')
 
 finalResult = totalburned + (bodyTypeModifier * totalburned)
-reductionResult = totalburned - (reductionResult * totalburned)
+reductionResult = totalburned - (reductionModifier * totalburned)
 
 print('Keep weight: ' + str(finalResult) + 'kcal')
 print('Lose weight: ' + str(reductionResult) + 'kcal')
