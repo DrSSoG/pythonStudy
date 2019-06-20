@@ -1,7 +1,10 @@
+''' Simple program checking if input is a primary number'''
 
+# Gets the integer from user
 def getNumber():
     return int(input('Give me a number: '))
 
+# Checks the integer given by user
 def checkNumber(number):
     if number == 2 or number == 3:
         return True
@@ -14,5 +17,6 @@ def checkNumber(number):
 
 num = getNumber()
 result = checkNumber(num)
-print(result)
+print('Result of the check: ' + str(result))
+
 
